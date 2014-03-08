@@ -1,0 +1,121 @@
+.header {
+	position: fixed;
+	width: 100%;
+	background: #202a53;
+	z-index: 10;
+}
+.header .navbar-brand {
+	font-weight: 900;
+}
+.header .navbar {
+	margin: 0;
+	border: none;
+}
+.navbar{
+	min-height: 80px;
+	padding: 15px 0;
+	font-weight: bold;
+}
+
+button a{
+	color: #fff;
+	text-decoration: none;
+}
+
+button a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.button-green{
+	color: #fff;
+	background-color: #99CC33;
+	border: 2px solid #99CC33;
+	
+}
+
+.button-green:hover{
+	background-color: transparent;
+	color: #99CC33;
+}
+
+.button-green a:hover{
+	color: #99CC33;
+}
+
+.page-section {
+	width: 100%;
+	min-height: 800px;
+	padding: 90px 0;
+}
+
+.page-section .three-fourth{
+	height: 350px;
+}
+.page-section h1 {
+	font-size: 4em;
+	margin: 80px 0;
+}
+.page-section h1 span {
+	font-weight: 200;
+}
+.page-section h2 {
+	font-size: 3em;
+	font-weight: 900;
+	color: #fff;
+	margin: 0 0 30px;
+}
+.page-section p {
+	font-size: 1.2em;
+	font-weight: 200;
+	margin: 0 25% 20px 0;
+}
+.page-section p.lead {
+	font-size: 1.8em;
+}
+.page-section p.caption {
+	color: #fff;
+}
+.page-section#about {
+	background-color: #202a53;
+}
+.page-section#pics {
+	background-color: #adc820;
+}
+.page-section#contact {
+	background-color: #F0D79C;
+}
+.page-section#request-quote {
+	background-color: #BA8C73;
+}
+
+.page-section#social {
+	background-color: #F2A483;
+}
+
+.inner-container{
+	width: 80%;
+	margin: 0 auto;
+}
+ 
+@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+}
+@media (max-width: 480px) {
+	.page-section h1 {
+		font-size: 3em;
+	}
+	.page-section h2 {
+		font-size: 2em;
+	}
+	.page-section p {
+		font-size: 1em;
+		margin: 0 0 20px;
+	}
+}
+
+div {
+    
+}
