@@ -85,6 +85,9 @@ button a:hover{
 .page-section#contact {
 	background-color: #F0D79C;
 }
+.page-section#quote {
+	background-color: #00E6E6;
+}
 .page-section#request-quote {
 	background-color: #BA8C73;
 }

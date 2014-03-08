@@ -79,6 +79,95 @@
       </div>
       <!--/#pics-->
 
+      <div id="quote" class="page-section">
+        <div class="container">
+          <h2>Resquest a Quote for Your Order</h2>
+          <p class="caption">
+            <form role="form">
+              <div class="yourevent">
+                <p class="caption">Your Event</p>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="when" placeholder="Date and Time">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="address" placeholder="Address">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="budget" placeholder="Budget">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="people" placeholder="Number of People">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="event-comments" rows="3" placeholder="Other comments on event"></textarea>
+                </div>
+              </div>
+              <div class="yourorder">
+                <p class="caption">Your Order</p>
+                <div class="form-group">
+                  Meal Type<br>
+                  <input type="checkbox" name="meal-type" value="Breakfast">Breakfast<br>
+                  <input type="checkbox" name="meal-type" value="Lunch">Lunch<br>
+                  <input type="checkbox" name="meal-type" value="Dinner">Dinner<br> 
+                  <input type="checkbox" name="meal-type" value="Desert">Desert
+                </div>
+                <div class="form-group">
+                  Catering Type<br>
+                  <input type="checkbox" name="catering-type" value="Finger">Finger Foods<br>
+                  <input type="checkbox" name="catering-type" value="Family">Family Style<br>
+                  <input type="checkbox" name="catering-type" value="Plate">Plate by Plate
+                </div>
+                <div class="form-group">
+                  Cusine Type<br>
+                  <input type="checkbox" name="cuisine-type" value="American">American/Canadian<br>
+                  <input type="checkbox" name="cuisine-type" value="Asian">Asian<br>
+                  <input type="checkbox" name="cuisine-type" value="Fusion">Fusion<br>
+                  <input type="checkbox" name="cuisine-type" value="Indian">Indian<br>
+                  <input type="checkbox" name="cuisine-type" value="Mediterranean">Mediterranean<br>
+                  <input type="checkbox" name="cuisine-type" value="Mexican">Mexican<br>
+                  <input type="checkbox" name="cuisine-type" value="MiddleEastern">Middle Eastern<br>
+                  <input type="checkbox" name="cuisine-type" value="Other">Other <input type="text" class="form-control" id="othercuisine">
+                </div>
+                <div class="form-group">
+                  Dietary Restrictions<br>
+                  <input type="checkbox" name="dietary" value="American">Vegetarian<br>
+                  <input type="checkbox" name="dietary" value="Asian">Vegan<br>
+                  <input type="checkbox" name="dietary" value="Fusion">Gluten Free<br>
+                  <input type="checkbox" name="dietary" value="Other">Other <input type="text" class="form-control" id="otherdietary">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="order-comments" rows="3" placeholder="Other comments on order"></textarea>
+                </div>
+              </div>
+              <div class="yourinfo">
+                <p class="caption">Your Contact Info</p>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="Phone" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                  Method of Payment<br>
+                  <input type="radio" name="payment" value="cash">Cash<br>
+                  <input type="radio" name="payment" value="cheque">Cheque<br>
+                  <input type="radio" name="payment" value="credit">Credit
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </p>
+        </div>
+        <!--/.container-->
+      </div>
+      <!--/#pics-->
+
       <div id="contact" class="page-section">
         <div class="container three-fourth">
           <h2>Have any questions?</h2>
@@ -96,7 +185,7 @@
                   <input type="email" class="form-control" id="email" placeholder="EMAIL:">
                 </div>
                 <div class="form-group">
-                <textarea class="form-control" id="message" rows="3" placeholder="MESSAGE:"></textarea>
+                  <textarea class="form-control" id="message" rows="3" placeholder="MESSAGE:"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send</button>
               </form>
