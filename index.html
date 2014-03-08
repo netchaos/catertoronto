@@ -160,15 +160,19 @@
           var options = {
             'showCancel': true,
             'showClose' : true,
-            'contentHeight': 500,
+            'contentHeight': 600,
             'backdrop' : false
           };
           var wizard = $("#request-quote-wizard").wizard(options);
 
           $('#show-request-quote-btn').on('click', function(){
             wizard.show();
-          })
+          });
         });
+
+        $('.btn-success').on('click', function(){
+          console.log('here');
+        })
       </script>
       
       <script type="text/javascript">
