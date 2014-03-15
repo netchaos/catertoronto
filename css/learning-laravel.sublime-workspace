@@ -1,0 +1,245 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"re",
+				"req"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"inline",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"console",
+				"Set Syntax: R Console"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/vimal/Learn/MyPlanet/CaterTo/catertoronto/js/app.js",
+		"/Users/vimal/Learn/MyPlanet/CaterTo/bootstrap-application-wizard-master/demo/demo.html",
+		"/Users/vimal/Learn/MyPlanet/CaterTo/catertoronto/sample-template.html",
+		"/Users/vimal/Desktop/all-in-one-event-calendar.php",
+		"/Users/vimal/Learn/Node/test/app.js",
+		"/Users/vimal/Learn/Coursera/Android/Week02/Activity.txt",
+		"/Users/vimal/Learn/MyPlanet/jcobb-basic-jquery-slider-8ffe118/demo.css",
+		"/Users/vimal/Learn/MyPlanet/jcobb-basic-jquery-slider-8ffe118/index.html",
+		"/Users/vimal/Learn/MyPlanet/MyPlanet-Fellowship/JitteryJoe/index.html",
+		"/Users/vimal/Learn/MyPlanet/MyPlanet-Fellowship/JitteryJoe/style.css",
+		"/Users/vimal/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/vimal/Learn/MyPlanet/MyPlanet-Fellowship/JitteryJoe/blends.html",
+		"/Users/vimal/Learn/MyPlanet/site/style.css",
+		"/Users/vimal/Learn/MyPlanet/site/js/app.js",
+		"/Users/vimal/Learn/MyPlanet/site/blends.html",
+		"/Users/vimal/Learn/MyPlanet/site/index.html",
+		"/Users/vimal/Documents/Environments/01/site/index.html",
+		"/Users/vimal/Learn/MyPlanet/Week 3 - Jan 25 - Definition Phase/angular-joe/index.html",
+		"/Users/vimal/Documents/angular-demo/index.html",
+		"/Users/vimal/Documents/angular-demo/main.css",
+		"/Users/vimal/Desktop/ntfs.sh"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Pics",
+			"pics",
+			"button",
+			"About",
+			"about",
+			"About",
+			"about",
+			"About",
+			"about",
+			"Africa",
+			"africa",
+			"australia",
+			"asia",
+			"antarctica",
+			"Link",
+			"THE BIG BANG",
+			"THE BING BANG",
+			"MPD APP",
+			"user-name",
+			"valign",
+			"div"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "learning-laravel.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
