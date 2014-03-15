@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CaterToronto</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <style>
+    #sortable1, #sortable2, #sortable3 { list-style-type: none; margin: 0; padding: 0 0 2.5em; float: left; margin-right: 10px; }
+    #sortable1 li, #sortable2 li, #sortable3 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 120px; }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand scroll-top">CaterToronto</a>
+      </div>
+      <!--/.navbar-header-->
+      <div id="main-nav" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#" class="scroll-link" data-id="about">Filter</a></li>
+          <li><a href="#" class="scroll-link" data-id="pics">Sort</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="scroll-link btn button-green navbar-btn" id="show-request-quote-btn">Search Bar</div>
+          </li>
+        </ul>
+      </div>
+      <!--/#main-nav.navbar-collapse-->
+    </nav>
+
+
+    <div class="container">
+      <h1>Manage Orders</h1><br>
+      <div id="contentBox" style="margin:0px auto; width:70%">
+        <!-- columns divs, float left, no margin so there is no space between column, width=1/3 -->
+        <div id="column1" style="float:left; margin:0; width:33%;">
+          UNASSIGNED<br>
+          <ul id="sortable1" class="connectedSortable">
+            <li class="order-basic">
+              <div>Item 1</div>
+              <div>--</div>
+            </li>
+            <li class="order-basic">
+              <div>Item 2</div>
+              <div>--</div>
+            </li>
+            <li class="order-basic">
+              <div>Item 3</div>
+              <div>--</div>
+            </li>
+          </ul>
+        </div>
+        <div id="column2" style="float:left; margin:0;width:33%;">
+          PENDING<br>
+          <ul id="sortable2" class="connectedSortable">
+            <li class="order-basic">
+              <div>Item 1</div>
+              <div>--</div>
+            </li>
+            <li class="order-basic">
+              <div>Item 2</div>
+              <div>--</div>
+            </li>
+            <li class="order-basic">
+              <div>Item 3</div>
+              <div>--</div>
+            </li>
+          </ul>
+        </div>
+        <div id="column3" style="float:left; margin:0;width:33%">
+          ASSIGNED<br>
+          <ul id="sortable3" class="connectedSortable">
+            <li class="order-basic">
+              <div>Item 1</div>
+              <div>--</div>
+            </li>
+            <li class="order-basic">
+              <div>Item 2</div>
+              <div>--</div>
+            </li>
+            <li class="order-basic">
+              <div>Item 3</div>
+              <div>--</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        $( "#sortable1, #sortable2, #sortable3" ).sortable({
+          connectWith: ".connectedSortable"
+        }).disableSelection();
+      });
+    </script>
+    <script>
+      $(function() {
+        $( "#sortable1, #sortable2, #sortable3" ).accordion({
+          collapsible: true,
+          active: false,
+
+          beforeActivate: function(event, ui) {
+            // The accordion believes a panel is being opened
+            if (ui.newHeader[0]) {
+                var currHeader  = ui.newHeader;
+                var currContent = currHeader.next('.ui-accordion-content');
+             // The accordion believes a panel is being closed
+            } else {
+                var currHeader  = ui.oldHeader;
+                var currContent = currHeader.next('.ui-accordion-content');
+            }
+             // Since we've changed the default behavior, this detects the actual status
+            var isPanelSelected = currHeader.attr('aria-selected') == 'true';
+
+             // Toggle the panel's header
+            currHeader.toggleClass('ui-corner-all',isPanelSelected).toggleClass('accordion-header-active ui-state-active ui-corner-top',!isPanelSelected).attr('aria-selected',((!isPanelSelected).toString()));
+
+            // Toggle the panel's icon
+            currHeader.children('.ui-icon').toggleClass('ui-icon-triangle-1-e',isPanelSelected).toggleClass('ui-icon-triangle-1-s',!isPanelSelected);
+
+             // Toggle the panel's content
+            currContent.toggleClass('accordion-content-active',!isPanelSelected)    
+            if (isPanelSelected) { currContent.slideUp(); }  else { currContent.slideDown(); }
+
+            return false; // Cancel the default action
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
